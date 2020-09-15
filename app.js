@@ -2,7 +2,6 @@ let input =  document.getElementById('input'),
     nilai = 0;
 
 
-let show = document.getElementById('btn');
 const mulai = document.getElementById('mulai').addEventListener('click', function(e) {
 
        if(input.value == ''){
@@ -15,16 +14,12 @@ const mulai = document.getElementById('mulai').addEventListener('click', functio
 
        } else{
         localStorage.setItem('angka', input.value);
+        console.log(localStorage.getItem('angka'));
        }
        e.preventDefault();
-       
+
 
 });
 
-show.addEventListener('click', function(e){
 
-    console.log('123');
-    e.preventDefault();
-
-})
 

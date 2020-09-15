@@ -35,7 +35,7 @@ button:hover{
     box-shadow: 4px 15px 20px rgba(24, 86, 202, 0.37) !important;
 }
 
-#btn{
+#tap{
     background: #3498DB !important;
     box-shadow: 4px 15px 20px rgba(50, 114, 237, 0.2) !important;
     border-radius: 50px !important;
@@ -49,7 +49,7 @@ button:hover{
 
 }
 
-#btn:hover{
+#tap:hover{
     background: #4ba9e7 !important;
     box-shadow: 4px 15px 20px rgba(24, 86, 202, 0.37) !important;
 }
