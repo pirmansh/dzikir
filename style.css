@@ -14,6 +14,13 @@ body{
     border: 1px solid #E7E7E7 !important;
     border-radius: 10px !important;
     height: 49px !important;
+    margin: auto;
+}
+#show{
+    border: 1px solid #E7E7E7 !important;
+    border-radius: 10px !important;
+    width: 209px !important;
+    height: 97px !important;
 }
 button{
     background: #3498DB !important;
@@ -27,3 +34,27 @@ button:hover{
     background: #4ba9e7 !important;
     box-shadow: 4px 15px 20px rgba(24, 86, 202, 0.37) !important;
 }
+
+#btn{
+    background: #3498DB !important;
+    box-shadow: 4px 15px 20px rgba(50, 114, 237, 0.2) !important;
+    border-radius: 50px !important;
+    color: white !important;
+    width: 94px !important;
+    height: 138px !important;
+    margin: auto;
+    margin-top: 120px !important;
+    left: 141px !important;
+    top: 474px !important;
+
+}
+
+#btn:hover{
+    background: #4ba9e7 !important;
+    box-shadow: 4px 15px 20px rgba(24, 86, 202, 0.37) !important;
+}
+
+
+.center {
+    text-align: center;
+  }
