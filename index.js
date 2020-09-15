@@ -14,7 +14,7 @@ let tab= document.getElementById('tap').addEventListener('click', function(e){
         
         Swal.fire({
             title: 'Alhamdulillah...',
-            text: `Anda sudah berdzikir sebanyak ${batas} kali!`,
+            text: `Anda sudah berdzikir sebanyak ${batas} kali! 👍😇`,
             icon: 'success',
             showCancelButton: false,
             confirmButtonColor: '#3498DB',
