@@ -23,10 +23,20 @@ const mulai = document.getElementById('mulai').addEventListener('click', functio
          
   
          } else{
-          localStorage.setItem('angka', input.value);
-          input.value = '';
-          window.location.replace('./app.html')
-          // window.location.replace('https://pirmansh.github.io/dzikir/app.html');
+
+          if(input.value > 1000){
+            Swal.fire({
+              icon: 'warning',
+              title: 'Waduh...',
+              text: 'Emang gak kebanyakan tuh?',
+            });
+          } else{
+            localStorage.setItem('angka', input.value);
+            input.value = '';
+            // window.location.replace('./app.html')
+            window.location.replace('https://pirmansh.github.io/dzikir/app.html');
+          }
+
          }
 
        }

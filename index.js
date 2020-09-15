@@ -22,8 +22,8 @@ let tab= document.getElementById('tap').addEventListener('click', function(e){
           }).then((result) => {
             if (result.isConfirmed) {
             
-                window.location.replace('./index.html')
-                // window.location.replace('https://pirmansh.github.io/dzikir/index.html')
+                // window.location.replace('./index.html')
+                window.location.replace('https://pirmansh.github.io/dzikir/index.html')
             
             }
           });
