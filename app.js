@@ -1,20 +1,19 @@
-let input =  document.getElementById('input'),
-    nilai = 0;
-
+let input =  document.getElementById('input');
 
 const mulai = document.getElementById('mulai').addEventListener('click', function(e) {
 
        if(input.value == ''){
       
         Swal.fire({
-          icon: 'error',
+          icon: 'warning',
           title: 'Oops...',
-          text: 'Banyaknya dzikir belum di isi!',
+          text: 'Form input belum di isi!',
         });
 
        } else{
         localStorage.setItem('angka', input.value);
-        console.log(localStorage.getItem('angka'));
+        input.value = '';
+        window.location.replace('app.html');
        }
        e.preventDefault();
 
