@@ -4,11 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta property="og:description" content="Web Aplikasi Dzikir" /> 
+    <meta property="og:image" content="https://github.com/pirmansh/dzikir/blob/master/img/mosque.png?raw=true" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 
     <title>Dzikir</title>
@@ -26,9 +28,50 @@
                   </div>
                   <button type="submit" id="mulai" class="btn btn-lg btn-block">MULAI</button>
                 </form>
+                <div class="text-center">
+                  <p>Bingung cara pakainya? <span><a href="#" data-toggle="modal" data-target="#exampleModalLong"> klik Bantuan!</a></span></p>
+                  <a class="my-5" href="https://github.com/pirmansh"><i class="fab fa-github"></i> pirmansh</a>
+                </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Bantuan</h5>
+        <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </a>
+      </div>
+      <div class="modal-body">
+        <ol>
+          <li>
+            Input jumlah berapa banyak anda akan berdzikir
+          </li>
+          <li>
+            Klik button mulai
+          </li>
+          <li>
+            Klik button <b>TAP</b> dan secara otomatis akan memunculkan jumlah berapa banyak anda berdzikir 
+          </li>
+          <li>
+            Aplikasi akan secara otomatis memuncukan alert ketika jumlah dzikir anda sudah mencapai jumlah dzikir yang anda input di form halaman utama
+          </li>
+        </ol>
+
+        <div class="my-3">
+          <small>Notes: hanya bisa memasukan inputan angka, inputan tidak boleh lebih dari 1000, dan pastikan sebelum mengklik "button mulai", form harus inputan sudah di isi!</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                
             </div>
         </div>
     </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

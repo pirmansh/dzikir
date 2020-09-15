@@ -67,3 +67,20 @@ button:hover{
     margin: auto;
     padding-top: 18px;
 }
+
+p{
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 50px;
+}
+
+li{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+a{
+    font-weight: 500;
+    font-size: 13px;
+    color: #939393;
+}
