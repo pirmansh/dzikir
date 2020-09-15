@@ -8,9 +8,9 @@ let tab= document.getElementById('tap').addEventListener('click', function(e){
     
     show.innerHTML = `<p id="hasil">${angka++}</p>`;
     hitung++;
-    navigator.vibrate([10]);
+    navigator.vibrate([20]);
     if(hitung == parseInt(batas)){
-        navigator.vibrate([500]);
+        navigator.vibrate([600]);
         
         Swal.fire({
             title: 'Alhamdulillah...',
@@ -22,8 +22,8 @@ let tab= document.getElementById('tap').addEventListener('click', function(e){
           }).then((result) => {
             if (result.isConfirmed) {
             
-                // window.location.replace('./index.html')
-                window.location.replace('https://pirmansh.github.io/dzikir/index.html')
+                window.location.replace('./index.html')
+                // window.location.replace('https://pirmansh.github.io/dzikir/index.html')
             
             }
           });
