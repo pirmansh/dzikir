@@ -14,6 +14,7 @@ const mulai = document.getElementById('mulai').addEventListener('click', functio
        } else{
         localStorage.setItem('angka', input.value);
         input.value = '';
+        // window.location.replace('./app.html')
         window.location.replace('https://pirmansh.github.io/dzikir/app.html');
        }
        e.preventDefault();

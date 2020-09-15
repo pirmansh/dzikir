@@ -1,22 +1,33 @@
 const show =  document.getElementById('show');
 let batas = localStorage.getItem('angka');
-let angka = 0;
+let angka = 1;
+let hitung =  0;
 
-
-show.innerHTML = `<p id="hasil">${angka++}</p>`;
 
 let tab= document.getElementById('tap').addEventListener('click', function(e){
-    angka = 1;
+    
     show.innerHTML = `<p id="hasil">${angka++}</p>`;
+    hitung++;
     navigator.vibrate([10]);
-    if(angka == parseInt(batas)){
+    if(hitung == parseInt(batas)){
         navigator.vibrate([500]);
+        
         Swal.fire({
-        icon: 'success',
-        title: 'Alhamdulillah...',
-        text: `Anda sudah berdzikir sebanyak ${batas}!`,
-        });
-        window.location.replace('https://pirmansh.github.io/dzikir/index.html');
+            title: 'Alhamdulillah...',
+            text: `Anda sudah berdzikir sebanyak ${batas} kali!`,
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3498DB',
+            confirmButtonText: 'OKE'
+          }).then((result) => {
+            if (result.isConfirmed) {
+            
+                // window.location.replace('./index.html')
+                window.location.replace('https://pirmansh.github.io/dzikir/index.html')
+            
+            }
+          });
+        
     }
     e.preventDefault();
 
